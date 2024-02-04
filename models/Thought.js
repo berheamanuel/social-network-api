@@ -1,5 +1,5 @@
-const { Schema, model, Types } = require("mongoose");
-const ReactionSchema = require("./Reaction");
+const { Schema, model } = require("mongoose");
+const reactionSchema = require("./Reaction");
 const dateFormat = require("../utils/dateFormat");
 
 const ThoughtSchema = new Schema(
@@ -15,7 +15,7 @@ const ThoughtSchema = new Schema(
       type: Date,
       default: Date.now,
       // Use a getter method to format the timestamp on query
-      get: (date) => dateFormat(date),
+      get: timestamp => dateFormat(timestamp),
     },
 
     username: {
@@ -24,7 +24,7 @@ const ThoughtSchema = new Schema(
     },
 
     // array of nested documents created with the reactionSchema
-    reactions: [ReactionSchema],
+    reactions: [ reactionSchema ],
   },
   {
     toJSON: {
