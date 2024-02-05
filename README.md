@@ -34,6 +34,10 @@ AS A social media startup
 ## Demonstration
 * [Walkthrough Video](https://drive.google.com/file/d/1zwqzSBWgx1iJiEsdkX3x9em5xzwrMwoU/view)
 
+## Screenshots
+* ![All Users](./images/Screenshot%202024-02-05%20003311.png)
+* ![All Thoughts](./images/Screenshot%202024-02-05%20003429.png)
+
 ## Technologies Used
 
 - Node.js
